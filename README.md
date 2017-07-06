@@ -16,4 +16,17 @@ $('.lazy').lazyload({
 });
 ```
 
+自定义事件，在图片显示时响应
+```js
+$('.lazy').on('appear', function(e){
+    console.log(e.target);
+});
+```
+自定义事件，在图片显示完成后响应
+```js
+$('.lazy').on('appeared', function(e){
+    console.log(e.target);
+});
+```
+
 [LazyLoad 更多用法介绍](http://www.appelsiini.net/projects/lazyload)
